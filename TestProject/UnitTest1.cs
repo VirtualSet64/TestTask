@@ -21,7 +21,7 @@ namespace TestProject
                     break;
             }
             if (figure != null)
-                Assert.IsNotNull(figure.CalcArea());
+                Assert.AreNotEqual(0, figure.CalcArea());
         }
 
         [TestMethod]
@@ -40,7 +40,7 @@ namespace TestProject
                     break;
             }
             if (figure != null)
-                Assert.IsNotNull(figure.CalcArea());
+                Assert.AreNotEqual(0, figure.CalcArea());
         }
     }
 }

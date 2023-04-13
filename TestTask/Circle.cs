@@ -2,13 +2,15 @@
 {
     public class Circle : Figure
     {
-        public Circle(double radius) : base(radius)
+        public double Radius { get; set; }
+        public Circle(double radius)
         {
+            Radius = radius;
         }
 
-        public double CalcAreaOfCircle()
+        public override double CalcArea()
         {
-            var S = Math.PI * Math.Pow(A, 2);
+            var S = Math.PI * Math.Pow(Radius, 2);
             return S;
         }
     }
